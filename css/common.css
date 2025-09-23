@@ -49,6 +49,23 @@ a {
   }
 }
 
+.maxTitle {
+  font-size: 6rem;
+  font-weight: 600;
+  word-wrap: break-word;
+  letter-spacing: -0.2px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .maxTitle {
+    font-size: 5rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .maxTitle {
+    font-size: 4rem;
+  }
+}
+
 .title {
   font-size: 5rem;
   font-weight: 700;
@@ -67,8 +84,8 @@ a {
 }
 
 .subTitle {
-  font-size: 3rem;
-  font-weight: 350;
+  font-size: 2.5rem;
+  font-weight: 600;
   word-wrap: break-word;
   letter-spacing: -0.2px;
 }

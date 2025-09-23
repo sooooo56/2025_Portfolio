@@ -53,6 +53,10 @@ a{
 }
 
 // 공통 타이틀 스타일
+.maxTitle{
+  @include v.max-title();
+}
+
 .title{
   @include v.title();
 }
