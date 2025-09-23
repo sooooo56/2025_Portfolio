@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Pretendard", sans-serif;
+  letter-spacing: -0.2px;
+  margin: 0;
+  color: #333;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1530px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (max-width: 1520px) and (min-width: 1260px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 767px;
+    padding: 0 2rem;
+  }
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  word-wrap: break-word;
+  letter-spacing: -0.2px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.subTitle {
+  font-size: 3rem;
+  font-weight: 350;
+  word-wrap: break-word;
+  letter-spacing: -0.2px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .subTitle {
+    font-size: 2.3rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .subTitle {
+    font-size: 2rem;
+  }
+}
+
+.mobile-br {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-br {
+    display: inline;
+  }
+}
+
+.tablet-br {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .tablet-br {
+    display: inline;
+  }
+}

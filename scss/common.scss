@@ -1,0 +1,81 @@
+@use './var.scss' as v;
+
+html {
+  font-size: 62.5%; // 1rem = 10px 설정
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Pretendard', sans-serif;
+  letter-spacing: -.2px;
+  margin: 0;
+  color: v.$black;
+
+  @media (min-width: 768px) and (max-width: 1440px){
+    font-size: 1.6rem;
+  }
+  @media all and (max-width: 767px){
+    font-size: 1.4rem;
+  }
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+//공통 컨텐츠 너비
+.container {
+  max-width: 1530px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  // 1439px ~ 1260px 범위에 적용
+  @media (max-width: 1520px) and (min-width: 1260px) {
+    padding: 0 4rem;
+  }
+
+  // 1250px ~ 768px 범위에 적용
+  @media (max-width: 1250px) {
+    max-width: 1440px;
+    padding: 0 3rem;
+  }
+
+  // 767px 이하에 적용
+  @media (max-width: 767px) {
+    max-width: 767px;
+    padding: 0 2rem;
+  }
+
+}
+
+// 공통 타이틀 스타일
+.title{
+  @include v.title();
+}
+
+.subTitle{
+  @include v.sub-title();
+}
+
+.mobile-br {
+    display: none; // 기본은 안 보임
+
+  @media (max-width: 768px) {
+    display: inline; // 모바일에서만 줄바꿈 적용
+  }
+}
+
+.tablet-br {
+    display: none; // 기본은 안 보임
+    
+  @media (max-width: 1440px) {
+    display: inline; // 모바일에서만 줄바꿈 적용
+  }
+}
+
+
+

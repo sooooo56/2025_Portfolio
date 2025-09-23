@@ -1,0 +1,87 @@
+
+$black: #333;
+$gray: #FAFAFA;
+
+// 포인트 컬러
+$point-color: #FFDBDB;
+
+// 컨테이너 사이(위아래) 마진
+@mixin pc-m(){
+  margin: 250px auto;
+  @media (min-width: 768px) and (max-width: 1440px){
+      margin: 150px auto;
+  }
+  @media all and (max-width: 767px){
+      margin: 80px auto;
+  }
+}
+
+@mixin pc-mb(){
+  margin: 0 auto 250px auto;
+
+  @media (min-width: 768px) and (max-width: 1440px){
+      margin: 0 auto 150px auto;
+  }
+  @media all and (max-width: 767px){
+      margin: 0 auto 80px auto;
+  }
+}
+
+// 타이틀, 컨텐츠 사이 여백
+@mixin title-mb(){
+  margin-bottom: 48px;
+  
+  @media (min-width: 768px) and (max-width: 1023px){
+      margin-bottom: 40px;
+  }
+  @media all and (max-width: 767px){
+      margin-bottom: 30px;
+  }
+}
+
+
+// 타이틀 , 텍스트
+@mixin max-title(){
+  font-size: 6rem;
+  font-weight: 600;
+  word-wrap: break-word;
+  letter-spacing: -.2px;
+  
+  @media (min-width: 768px) and (max-width: 1023px){
+    font-size: 5rem;
+  }
+  @media all and (max-width: 767px){
+    font-size: 4rem;
+  }
+}
+
+@mixin title(){
+  font-size: 5rem;
+  font-weight: 700;
+  word-wrap: break-word;
+  letter-spacing: -.2px;
+
+  @media (min-width: 768px) and (max-width: 1023px){
+    font-size: 4rem;
+  }
+  @media all and (max-width: 767px){
+    font-size: 3rem;
+  }
+}
+
+
+@mixin sub-title(){
+  font-size: 3rem;
+  font-weight: 350;
+  word-wrap: break-word;
+  letter-spacing: -.2px;
+
+  @media (min-width: 768px) and (max-width: 1023px){
+    font-size: 2.3rem;
+  }
+  @media all and (max-width: 767px){
+    font-size: 2rem;
+  }
+}
+
+
