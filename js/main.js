@@ -68,3 +68,27 @@ function random(min, max) {
   const delta = max - min;
   return (direction = 1) => (min + delta * Math.random()) * direction;
 }
+
+
+// work bg text
+gsap.registerPlugin(ScrollTrigger);
+
+console.log('gsap', !!gsap, 'ScrollTrigger', !!ScrollTrigger); // 로드 확인용
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#work",
+    start: "top bottom",   // #work의 top이 viewport bottom에 닿을 때 시작
+    end: "bottom top",     // #work의 bottom이 viewport top에 닿을 때 끝
+    scrub: true,
+    markers: true          // 디버그용. 확인 후 false로 바꿔
+  }
+});
+
+// 위에서 아래로 흘러가는 흐름: 등장 -> 중앙 -> 퇴장
+tl.fromTo(".work-bg-text",
+  { y: -150, opacity: 0 },
+  { y: 0, opacity: 1, ease: "none" }
+).to(".work-bg-text",
+  { y: 150, opacity: 0, ease: "none" }
+);
