@@ -7,9 +7,9 @@ $point-color: #FFDBDB;
 
 // 컨테이너 사이(위아래) 마진
 @mixin pc-m(){
-  margin: 250px auto;
+  margin: 180px auto;
   @media (min-width: 768px) and (max-width: 1440px){
-      margin: 150px auto;
+      margin: 140px auto;
   }
   @media all and (max-width: 767px){
       margin: 80px auto;
@@ -27,23 +27,10 @@ $point-color: #FFDBDB;
   }
 }
 
-// 타이틀, 컨텐츠 사이 여백
-@mixin title-mb(){
-  margin-bottom: 48px;
-  
-  @media (min-width: 768px) and (max-width: 1023px){
-      margin-bottom: 40px;
-  }
-  @media all and (max-width: 767px){
-      margin-bottom: 30px;
-  }
-}
-
-
 // 타이틀 , 텍스트
 @mixin max-title(){
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 800;
   word-wrap: break-word;
   letter-spacing: -.2px;
   
@@ -60,19 +47,21 @@ $point-color: #FFDBDB;
   font-weight: 700;
   word-wrap: break-word;
   letter-spacing: -.2px;
+  padding-bottom: 4rem;
 
   @media (min-width: 768px) and (max-width: 1023px){
     font-size: 4rem;
   }
   @media all and (max-width: 767px){
     font-size: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 
 @mixin sub-title(){
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
   word-wrap: break-word;
   letter-spacing: -.2px;
 
