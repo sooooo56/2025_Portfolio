@@ -16,17 +16,6 @@ $point-color: #FFDBDB;
   }
 }
 
-@mixin pc-mb(){
-  margin: 0 auto 250px auto;
-
-  @media (min-width: 768px) and (max-width: 1440px){
-      margin: 0 auto 150px auto;
-  }
-  @media all and (max-width: 767px){
-      margin: 0 auto 80px auto;
-  }
-}
-
 // 타이틀 , 텍스트
 @mixin max-title(){
   font-size: 6rem;

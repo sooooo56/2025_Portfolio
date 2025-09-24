@@ -260,3 +260,39 @@ header ul li a:hover {
 #about .textContainer h3 {
   padding-bottom: 1.5rem;
 }
+
+#work {
+  background-color: #FAFAFA;
+  padding: 160px 0;
+}
+
+.workList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.workList li {
+  width: 48%;
+  margin-bottom: 8rem;
+}
+@media (max-width: 767px) {
+  .workList li {
+    width: 100%;
+  }
+}
+.workList .workText {
+  padding-top: 2rem;
+}
+.workList .workText p {
+  padding-top: 1rem;
+}
+.workList a {
+  display: inline-block;
+  width: 100%;
+}
+.workList img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.1);
+}
