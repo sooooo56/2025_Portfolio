@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -263,31 +262,27 @@ header ul li a:hover {
 }
 
 #work {
-  background-color: #FAFAFA;
-  padding: 180px 0;
   position: relative;
+  padding: 180px 0;
+  background-color: #FAFAFA;
   overflow: hidden;
+}
+#work .workInner {
+  position: relative;
+  z-index: 2;
 }
 #work .work-bg-text {
   position: absolute;
-  top: 45%; /* 화면 중앙보다 약간 위 (스크롤 따라다니는 기준) */
+  top: 5%;
   left: 50%;
-  transform: translateX(-50%); /* Y는 GSAP이 제어 */
-  font-size: clamp(4rem, 8vw, 10rem);
+  transform: translate(-50%, 70%);
+  font-size: 10vw;
   font-weight: 900;
-  color: transparent;
   -webkit-text-stroke: 2px #eaeaea;
-  line-height: 1;
-  pointer-events: none;
-  z-index: 0; /* 내용보다 아래 */
-  opacity: 0; /* 처음엔 안 보이게 */
+  color: transparent;
   white-space: nowrap;
-  will-change: transform, opacity;
-}
-
-.workInner {
-  position: relative;
-  z-index: 2;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .workList {

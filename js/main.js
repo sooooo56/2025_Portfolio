@@ -1,13 +1,10 @@
 // navi
 const header = document.querySelector('header');
 
-// Function to handle the scroll event
 const handleScroll = () => {
     if (window.scrollY > 50) {
-        // Add the 'scrolled' class when scrolled past 50px
         header.classList.add('scrolled');
     } else {
-        // Remove the 'scrolled' class when at the top
         header.classList.remove('scrolled');
     }
 };
@@ -70,25 +67,19 @@ function random(min, max) {
 }
 
 
-// work bg text
+// GSAP와 ScrollTrigger 플러그인 등록
 gsap.registerPlugin(ScrollTrigger);
 
-console.log('gsap', !!gsap, 'ScrollTrigger', !!ScrollTrigger); // 로드 확인용
-
-const tl = gsap.timeline({
+// work-bg-text를 스크롤에 1:1로 따라가게
+gsap.to(".work-bg-text", {
+  y: () => document.querySelector("#work").offsetHeight, 
+  ease: "none",
   scrollTrigger: {
     trigger: "#work",
-    start: "top bottom",   // #work의 top이 viewport bottom에 닿을 때 시작
-    end: "bottom top",     // #work의 bottom이 viewport top에 닿을 때 끝
+    start: "top top",
+    end: "bottom top",   // work 영역 끝날 때까지
     scrub: true,
-    markers: true          // 디버그용. 확인 후 false로 바꿔
+    markers: true,
   }
 });
 
-// 위에서 아래로 흘러가는 흐름: 등장 -> 중앙 -> 퇴장
-tl.fromTo(".work-bg-text",
-  { y: -150, opacity: 0 },
-  { y: 0, opacity: 1, ease: "none" }
-).to(".work-bg-text",
-  { y: 150, opacity: 0, ease: "none" }
-);
