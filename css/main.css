@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -225,16 +226,16 @@ header ul li a:hover {
 }
 
 #about {
-  margin: 180px auto;
+  padding: 180px 0;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   #about {
-    margin: 140px auto;
+    padding: 140px 0;
   }
 }
 @media all and (max-width: 767px) {
   #about {
-    margin: 80px auto;
+    padding: 80px 0;
   }
 }
 #about .aboutInner {
@@ -262,10 +263,20 @@ header ul li a:hover {
 }
 
 #work {
-  position: relative;
   padding: 180px 0;
+  position: relative;
   background-color: #FAFAFA;
   overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  #work {
+    padding: 140px 0;
+  }
+}
+@media all and (max-width: 767px) {
+  #work {
+    padding: 80px 0;
+  }
 }
 #work .workInner {
   position: relative;
@@ -314,4 +325,55 @@ header ul li a:hover {
   height: 100%;
   border-radius: 1.5rem;
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.1);
+}
+
+#project {
+  padding: 180px 0;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  #project {
+    padding: 140px 0;
+  }
+}
+@media all and (max-width: 767px) {
+  #project {
+    padding: 80px 0;
+  }
+}
+
+#contact {
+  background: #FAFAFA;
+  padding: 180px 0;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  #contact {
+    padding: 140px 0;
+  }
+}
+@media all and (max-width: 767px) {
+  #contact {
+    padding: 80px 0;
+  }
+}
+#contact .contactInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .contactText {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+}
+#contact .contactText .email h1 {
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright ul {
+  display: flex;
+  gap: 6rem;
 }

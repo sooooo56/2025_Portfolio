@@ -1,6 +1,7 @@
 @use './var.scss' as v;
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; // 1rem = 10px 설정
 }
 

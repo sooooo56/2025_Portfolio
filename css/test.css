@@ -1,0 +1,362 @@
+.mast {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fe6513;
+}
+.mast__header {
+  padding: 1em;
+}
+.mast__title {
+  margin: 0.15em auto;
+  padding: 0 1em;
+  font-size: calc(100% + 3.85vw);
+}
+.mast__text {
+  font-size: 1em;
+}
+@media (min-width: 54em) {
+  .mast__text {
+    font-size: calc(100% + 0.5vw);
+  }
+}
+.mast__icon {
+  display: block;
+  font-size: 2.5em;
+  filter: hue-rotate(414deg) brightness(1.15) saturate(1.4);
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 54em) {
+  .mast__icon {
+    font-size: calc(100% + 3.25vw);
+  }
+}
+
+.animate .mast__title > * {
+  display: inline-block;
+  min-width: 0.1em;
+  backface-visibility: hidden;
+  animation: slide-up 0.6s cubic-bezier(0.19, 0.9, 0.9, 1) both;
+}
+.animate .mast__title > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate .mast__title > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate .mast__title > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animate .mast__title > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.animate .mast__title > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.animate .mast__title > *:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.animate .mast__title > *:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.animate .mast__title > *:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.animate .mast__title > *:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.animate .mast__title > *:nth-child(10) {
+  animation-delay: 1s;
+}
+.animate .mast__title > *:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.animate .mast__title > *:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.animate .mast__title > *:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.animate .mast__title > *:nth-child(14) {
+  animation-delay: 1.4s;
+}
+.animate .mast__title > *:nth-child(15) {
+  animation-delay: 1.5s;
+}
+.animate .mast__title > *:nth-child(16) {
+  animation-delay: 1.6s;
+}
+.animate .mast__title > *:nth-child(17) {
+  animation-delay: 1.7s;
+}
+.animate .mast__title > *:nth-child(18) {
+  animation-delay: 1.8s;
+}
+.animate .mast__title > *:nth-child(19) {
+  animation-delay: 1.9s;
+}
+.animate .mast__title > *:nth-child(20) {
+  animation-delay: 2s;
+}
+.animate .mast__text > * {
+  display: inline-block;
+  min-width: 0.25em;
+  animation: slide-right 0.6s cubic-bezier(0.19, 0.9, 0.9, 1) both;
+}
+.animate .mast__text > *:nth-child(1) {
+  animation-delay: 0.025s;
+}
+.animate .mast__text > *:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.animate .mast__text > *:nth-child(3) {
+  animation-delay: 0.075s;
+}
+.animate .mast__text > *:nth-child(4) {
+  animation-delay: 0.1s;
+}
+.animate .mast__text > *:nth-child(5) {
+  animation-delay: 0.125s;
+}
+.animate .mast__text > *:nth-child(6) {
+  animation-delay: 0.15s;
+}
+.animate .mast__text > *:nth-child(7) {
+  animation-delay: 0.175s;
+}
+.animate .mast__text > *:nth-child(8) {
+  animation-delay: 0.2s;
+}
+.animate .mast__text > *:nth-child(9) {
+  animation-delay: 0.225s;
+}
+.animate .mast__text > *:nth-child(10) {
+  animation-delay: 0.25s;
+}
+.animate .mast__text > *:nth-child(11) {
+  animation-delay: 0.275s;
+}
+.animate .mast__text > *:nth-child(12) {
+  animation-delay: 0.3s;
+}
+.animate .mast__text > *:nth-child(13) {
+  animation-delay: 0.325s;
+}
+.animate .mast__text > *:nth-child(14) {
+  animation-delay: 0.35s;
+}
+.animate .mast__text > *:nth-child(15) {
+  animation-delay: 0.375s;
+}
+.animate .mast__text > *:nth-child(16) {
+  animation-delay: 0.4s;
+}
+.animate .mast__text > *:nth-child(17) {
+  animation-delay: 0.425s;
+}
+.animate .mast__text > *:nth-child(18) {
+  animation-delay: 0.45s;
+}
+.animate .mast__text > *:nth-child(19) {
+  animation-delay: 0.475s;
+}
+.animate .mast__text > *:nth-child(20) {
+  animation-delay: 0.5s;
+}
+.animate .mast__text > *:nth-child(21) {
+  animation-delay: 0.525s;
+}
+.animate .mast__text > *:nth-child(22) {
+  animation-delay: 0.55s;
+}
+.animate .mast__text > *:nth-child(23) {
+  animation-delay: 0.575s;
+}
+.animate .mast__text > *:nth-child(24) {
+  animation-delay: 0.6s;
+}
+.animate .mast__text > *:nth-child(25) {
+  animation-delay: 0.625s;
+}
+.animate .mast__text > *:nth-child(26) {
+  animation-delay: 0.65s;
+}
+.animate .mast__text > *:nth-child(27) {
+  animation-delay: 0.675s;
+}
+.animate .mast__text > *:nth-child(28) {
+  animation-delay: 0.7s;
+}
+.animate .mast__text > *:nth-child(29) {
+  animation-delay: 0.725s;
+}
+.animate .mast__text > *:nth-child(30) {
+  animation-delay: 0.75s;
+}
+.animate .mast__text > *:nth-child(31) {
+  animation-delay: 0.775s;
+}
+.animate .mast__text > *:nth-child(32) {
+  animation-delay: 0.8s;
+}
+.animate .mast__text > *:nth-child(33) {
+  animation-delay: 0.825s;
+}
+.animate .mast__text > *:nth-child(34) {
+  animation-delay: 0.85s;
+}
+.animate .mast__text > *:nth-child(35) {
+  animation-delay: 0.875s;
+}
+.animate .mast__text > *:nth-child(36) {
+  animation-delay: 0.9s;
+}
+.animate .mast__text > *:nth-child(37) {
+  animation-delay: 0.925s;
+}
+.animate .mast__text > *:nth-child(38) {
+  animation-delay: 0.95s;
+}
+.animate .mast__text > *:nth-child(39) {
+  animation-delay: 0.975s;
+}
+.animate .mast__text > *:nth-child(40) {
+  animation-delay: 1s;
+}
+.animate .mast__text > *:nth-child(41) {
+  animation-delay: 1.025s;
+}
+.animate .mast__text > *:nth-child(42) {
+  animation-delay: 1.05s;
+}
+.animate .mast__text > *:nth-child(43) {
+  animation-delay: 1.075s;
+}
+.animate .mast__text > *:nth-child(44) {
+  animation-delay: 1.1s;
+}
+.animate .mast__text > *:nth-child(45) {
+  animation-delay: 1.125s;
+}
+.animate .mast__text > *:nth-child(46) {
+  animation-delay: 1.15s;
+}
+.animate .mast__text > *:nth-child(47) {
+  animation-delay: 1.175s;
+}
+.animate .mast__text > *:nth-child(48) {
+  animation-delay: 1.2s;
+}
+.animate .mast__text > *:nth-child(49) {
+  animation-delay: 1.225s;
+}
+.animate .mast__text > *:nth-child(50) {
+  animation-delay: 1.25s;
+}
+.animate .mast__text > *:nth-child(51) {
+  animation-delay: 1.275s;
+}
+.animate .mast__text > *:nth-child(52) {
+  animation-delay: 1.3s;
+}
+.animate .mast__text > *:nth-child(53) {
+  animation-delay: 1.325s;
+}
+.animate .mast__text > *:nth-child(54) {
+  animation-delay: 1.35s;
+}
+.animate .mast__text > *:nth-child(55) {
+  animation-delay: 1.375s;
+}
+.animate .mast__text > *:nth-child(56) {
+  animation-delay: 1.4s;
+}
+.animate .mast__text > *:nth-child(57) {
+  animation-delay: 1.425s;
+}
+.animate .mast__text > *:nth-child(58) {
+  animation-delay: 1.45s;
+}
+.animate .mast__text > *:nth-child(59) {
+  animation-delay: 1.475s;
+}
+.animate .mast__text > *:nth-child(60) {
+  animation-delay: 1.5s;
+}
+.animate .mast__text > *:nth-child(61) {
+  animation-delay: 1.525s;
+}
+.animate .mast__text > *:nth-child(62) {
+  animation-delay: 1.55s;
+}
+.animate .mast__text > *:nth-child(63) {
+  animation-delay: 1.575s;
+}
+.animate .mast__text > *:nth-child(64) {
+  animation-delay: 1.6s;
+}
+.animate .mast__text > *:nth-child(65) {
+  animation-delay: 1.625s;
+}
+.animate .mast__text > *:nth-child(66) {
+  animation-delay: 1.65s;
+}
+.animate .mast__text > *:nth-child(67) {
+  animation-delay: 1.675s;
+}
+.animate .mast__text > *:nth-child(68) {
+  animation-delay: 1.7s;
+}
+.animate .mast__text > *:nth-child(69) {
+  animation-delay: 1.725s;
+}
+.animate .mast__text > *:nth-child(70) {
+  animation-delay: 1.75s;
+}
+.animate .mast__icon {
+  animation: shake-it 1.5s cubic-bezier(0.19, 0.9, 0.9, 1) both;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(-2em, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes shake-it {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 20%, 30%, 40%, 50% {
+    transform: rotate(-6deg);
+  }
+  15%, 25%, 35%, 45%, 55% {
+    transform: rotate(6deg);
+  }
+  60%, 70%, 80%, 90% {
+    transform: rotate(-3deg);
+  }
+  65%, 75%, 85%, 95% {
+    transform: rotate(3deg);
+  }
+}
