@@ -314,7 +314,8 @@ header ul li a:hover {
   padding-top: 2rem;
 }
 .workList .workText p {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  color: #666;
 }
 .workList a {
   display: inline-block;
@@ -344,6 +345,11 @@ header ul li a:hover {
 #contact {
   background: #FAFAFA;
   padding: 180px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 4rem;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
   #contact {
@@ -356,24 +362,36 @@ header ul li a:hover {
   }
 }
 #contact .contactInner {
+  flex: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 #contact .contactText {
   display: flex;
-  gap: 5rem;
   flex-direction: column;
+  gap: 5rem;
+}
+#contact .contactText .subTitle {
+  font-weight: 500;
 }
 #contact .contactText .email h1 {
   padding-bottom: 2rem;
 }
-
-.copyright {
+#contact .contactText .email p {
+  line-height: 2.5rem;
+}
+#contact .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #a7a7a7;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
 }
-.copyright ul {
+#contact .copyright ul {
   display: flex;
   gap: 6rem;
 }

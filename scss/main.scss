@@ -199,7 +199,8 @@ header{
   .workText{
     padding-top: 2rem;
     p{
-      padding-top: 1rem;
+      padding-top: 1.5rem;
+      color: v.$sub-black;
     }
   }
   a{
@@ -221,35 +222,55 @@ header{
 }
 
 // contact
-#contact{
+#contact {
   background: v.$gray;
   @include v.pc-p();
+  min-height: 100vh; // 화면 높이 전체 차지
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // 위: contactText, 아래: copyright
+  padding: 0 0 4rem;
 
-  .contactInner{
+  .contactInner {
+    flex: 1; // 남는 공간 다 차지
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: center;  // 세로 가운데
+    justify-content: center; // 가로 가운데
+    text-align: left;
   }
 
-  .contactText{
+  .contactText {
     display: flex;
-    gap: 5rem;
     flex-direction: column;
+    gap: 5rem;
 
-    .email{
-      h1{
+    .subTitle {
+      font-weight: 500;
+    }
+
+    .email {
+      h1 {
         padding-bottom: 2rem;
+      }
+      p {
+        line-height: 2.5rem;
       }
     }
   }
-}
 
-.copyright{
-  display: flex;
-  justify-content: space-between;
-  ul{
+  .copyright {
     display: flex;
-    gap: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #a7a7a7;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+
+    ul {
+      display: flex;
+      gap: 6rem;
+    }
   }
 }
 
