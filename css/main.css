@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -281,14 +282,15 @@ header ul li a:hover {
 }
 #work .workInner {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 #work .work-bg-text {
   position: absolute;
-  top: 5%;
+  top: -15%; /* 영역 밖, 조금 더 위에서 시작하도록 조정 */
   left: 50%;
-  transform: translate(-50%, 70%);
-  font-size: 10vw;
+  /* transform: translateX(-50%);  GSAP가 Y축을 제어하므로, 초기 X축만 유지하거나, 아래처럼 transform을 분리하는게 좋습니다. */
+  transform: translateX(-50%); /* X축 중앙 정렬만 유지 */
+  font-size: 9vw;
   font-weight: 900;
   -webkit-text-stroke: 2px #eaeaea;
   color: transparent;
@@ -305,6 +307,9 @@ header ul li a:hover {
 .workList li {
   width: 48%;
   margin-bottom: 8rem;
+}
+.workList li:nth-child(3), .workList li:nth-child(4) {
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .workList li {

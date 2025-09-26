@@ -75,19 +75,43 @@ function random(min, max) {
 }
 
 
-// GSAP와 ScrollTrigger 플러그인 등록
+// ... (생략)
+function random(min, max) {
+  const delta = max - min;
+  return (direction = 1) => (min + delta * Math.random()) * direction;
+}
+
+
+// work-bg-text 스크롤 따라다니기
 gsap.registerPlugin(ScrollTrigger);
 
-// work-bg-text를 스크롤에 1:1로 따라가게
-gsap.to(".work-bg-text", {
-  y: () => document.querySelector("#work").offsetHeight, 
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#work",
-    start: "top top",
-    end: "bottom bottom",   // work 영역 끝날 때까지
-    scrub: true,
-    // markers: true,
-  }
-});
+const workText = document.querySelector(".work-bg-text");
+const workSection = document.querySelector("#work");
 
+const workHeight = workSection.offsetHeight; 
+
+// 애니메이션 시작/끝 지점 (y 이동값)
+// 텍스트를 위에서 아래로 work 영역 전체를 관통하도록 이동시킵니다.
+// -200 또는 -300: 텍스트가 위에서 완전히 보이지 않게 시작하는 값 (CSS의 top: -30%와 연계)
+// workHeight + 300: 텍스트가 아래로 완전히 사라질 때까지 이동하는 값
+
+const startY = -200; // 시작 위치 (work 영역 상단 밖)
+const endY = workHeight + 300; // 종료 위치 (work 영역 하단 밖)
+
+gsap.fromTo(workText,
+  { 
+    y: startY,   // 시작 위치: work 영역 위에서 완전히 안 보이게
+  },
+  { 
+    y: endY,     // 끝 위치: work 영역 아래로 완전히 사라질 때까지 이동
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#work",
+      start: "top bottom",    // #work 영역이 화면 하단에 닿을 때 (등장 시작)
+      end: "bottom top",      // #work 끝이 화면 상단에 닿을 때 (퇴장 끝)
+      scrub: true,            // 스크롤과 1:1 매칭
+      // markers: true,        // 디버깅용
+    
+    }
+  }
+);
