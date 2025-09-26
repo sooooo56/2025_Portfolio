@@ -67,19 +67,10 @@ a{
   @include v.sub-title();
 }
 
-.mobile-br {
-    display: none; // 기본은 안 보임
+.br {
 
   @media (max-width: 768px) {
-    display: inline; // 모바일에서만 줄바꿈 적용
-  }
-}
-
-.tablet-br {
-    display: none; // 기본은 안 보임
-    
-  @media (max-width: 1440px) {
-    display: inline; // 모바일에서만 줄바꿈 적용
+    display: none; // 모바일에서만 줄바꿈 적용
   }
 }
 

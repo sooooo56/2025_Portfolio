@@ -85,7 +85,7 @@ gsap.to(".work-bg-text", {
   scrollTrigger: {
     trigger: "#work",
     start: "top top",
-    end: "bottom top",   // work 영역 끝날 때까지
+    end: "bottom bottom",   // work 영역 끝날 때까지
     scrub: true,
     // markers: true,
   }

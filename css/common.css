@@ -104,20 +104,8 @@ a {
   }
 }
 
-.mobile-br {
-  display: none;
-}
 @media (max-width: 768px) {
-  .mobile-br {
-    display: inline;
-  }
-}
-
-.tablet-br {
-  display: none;
-}
-@media (max-width: 1440px) {
-  .tablet-br {
-    display: inline;
+  .br {
+    display: none;
   }
 }

@@ -13,7 +13,6 @@
 
   <!-- css -->
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/test.css">
   <link rel="stylesheet" href="./css/btn.css">
 
   <!-- AOS -->
@@ -25,7 +24,6 @@
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
   <script src="./js/main.js" defer></script>
-  <script src="./js/concact.js" defer></script>
 
 
 </head>
@@ -71,39 +69,38 @@
           <p>디자인과 코드, 그리고 사람을 잇는 다리로서, 더 효율적이고 창의적인 결과를 만들어냅니다.</p>
         </div>
 
-          <div>
-            <h3 class="subTitle">WORK EXPERIENCE</h3>
-            <ul>
-              <li>
-                <span>2023.06.18 -</span>
-                <p>미래커뮤니케이션</p>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h3 class="subTitle">WORK EXPERIENCE</h3>
+          <ul>
+            <li>
+              <span>2023.06.18 -</span>
+              <p>미래커뮤니케이션</p>
+            </li>
+          </ul>
+        </div>
 
-          <div>
-            <h3 class="subTitle">EDUCATION</h3>
-            <ul>
-              <li>
-                <span>2017.03 - 2020.02</span>
-                <p>이젠it아카데미학원</p>
-              </li>
+        <div>
+          <h3 class="subTitle">EDUCATION</h3>
+          <ul>
+            <li>
+              <span>2017.03 - 2020.02</span>
+              <p>이젠it아카데미학원</p>
+            </li>
 
-              <li>
-                <span>2024.05 - 2025.02</span>
-                <p>코리아IT아카데미</p>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <span>2024.05 - 2025.02</span>
+              <p>코리아IT아카데미</p>
+            </li>
+          </ul>
+        </div>
 
-          <div id="container">
-            <button class="learn-more">
-              <span class="circle">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">VIEW MORE</span>
-            </button>
-          </div>
+        <a class="learn-more">
+          <span class="circle">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">view more</span>
+        </a>
+        
       </div>
     </div>
   </section>
@@ -180,39 +177,58 @@
   </section>
 
 <section id="contact">
-  <div class="container contactInner">
+  <div class="contactInner container">
+    <!-- 상단 contact 텍스트 -->
     <div class="contactText">
-      <h3>개발자와 디자이너를 잇는 다리, 김소희였습니다.</h3>
+      <h3 class="subTitle">
+        개발자와 디자이너를 잇는 다리, 김소희였습니다.
+      </h3>
+
       <div class="email">
-        <h1>sooooo4645@gmail.com</h1>
-        <p>
+        <h1 class="title">
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">so</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">o</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">o</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">o</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">o</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">o</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">4</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">6</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="550">4</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">5</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">@</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">g</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="750">m</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">a</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="850">i</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">l</p>
+          <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="950">.com</p>
+        </h1>
+        <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
           궁금한 점이 있다면 메일을 보내주세요!<br>
           메일은 수시로 확인합니다.
         </p>
       </div>
-    
-      <div id="container">
-        <button class="learn-more">
-          <span class="circle">
-            <span class="icon arrow"></span>
-          </span>
-          <span class="button-text">메일 보내기</span>
-        </button>
-      </div>
-    </div>
-  
-    <div class="copyright">
-      <p>© 2025 sohee.com</p>
-      <ul>
-        <li><a href="">RESUME</a></li>
-        <li><a href="">BLOG</a></li>
-        <li><a href="">GITHUB</a></li>
-      </ul>
+
+      <a href="mailto:sooooo4645@gmail.com?subject=포트폴리오 문의&body=안녕하세요, 포트폴리오 잘 봤습니다." class="learn-more">
+        <span class="circle">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">메일 보내기</span>
+      </a>
     </div>
   </div>
 
+  <!-- 하단 copyright -->
+  <div class="copyright container">
+    <p>© 2025 sohee.com</p>
+    <ul>
+      <li><a href="">RESUME</a></li>
+      <li><a href="https://velog.io/@sooooo56/posts">BLOG</a></li>
+      <li><a href="https://github.com/sooooo56">GITHUB</a></li>
+    </ul>
+  </div>
 </section>
-
 
 </body>
 </html>

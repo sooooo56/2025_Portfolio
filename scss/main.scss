@@ -26,6 +26,10 @@ header{
     gap: 6rem;
     text-transform: uppercase;
 
+    @media (max-width:767px){
+      display: none;
+    }
+
     li{
       a{
         transition: color 0.3s ease;
@@ -130,6 +134,13 @@ header{
     flex-wrap: wrap;
     align-items: center;
     gap: 6rem;
+
+    @media (max-width:767px){
+      img{
+        width: 100%;
+      }
+    }
+
   }
   
   .textContainer{
@@ -140,7 +151,6 @@ header{
     }
     div{
       padding-top: 4rem;    
-      
     }
     ul li{
       display: flex;
@@ -150,6 +160,10 @@ header{
 
     h3{
       padding-bottom: 1.5rem;
+    }
+
+    .learn-more{
+      margin-top: 4rem
     }
   }
 }
@@ -193,6 +207,7 @@ header{
 
     @media (max-width:767px){
       width: 100%;
+      margin-bottom: 4rem;
     }
   }
 
@@ -225,17 +240,17 @@ header{
 #contact {
   background: v.$gray;
   @include v.pc-p();
-  min-height: 100vh; // 화면 높이 전체 차지
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; // 위: contactText, 아래: copyright
+  justify-content: space-between;
   padding: 0 0 4rem;
 
   .contactInner {
-    flex: 1; // 남는 공간 다 차지
+    flex: 1;
     display: flex;
-    align-items: center;  // 세로 가운데
-    justify-content: center; // 가로 가운데
+    align-items: center;
+    justify-content: center;
     text-align: left;
   }
 
@@ -251,10 +266,15 @@ header{
     .email {
       h1 {
         padding-bottom: 2rem;
+        display: flex;
       }
       p {
         line-height: 2.5rem;
       }
+    }
+
+    a.learn-more .button-text{
+      line-height: 2.3rem;
     }
   }
 
@@ -270,6 +290,12 @@ header{
     ul {
       display: flex;
       gap: 6rem;
+    }
+
+    @media (max-width:767px){
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5rem;
     }
   }
 }
